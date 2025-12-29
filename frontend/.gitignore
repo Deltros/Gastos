@@ -1,0 +1,21 @@
+# Dependencias
+node_modules/
+
+# Build
+/dist
+
+# Archivos de entorno
+.env
+.env.local
+.env.*
+
+# Archivos del editor
+.DS_Store
+*.log
+
+# Archivos de pruebas
+coverage/
+
+# Archivos de configuración de sistema
+.vscode/
+.idea/
