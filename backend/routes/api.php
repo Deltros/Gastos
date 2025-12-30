@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\MovementController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,9 +25,12 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/user', [AuthController::class, 'user']);
-    
+
+    // Movements
+    Route::get('/movements', [MovementController::class, 'index']);
+
     // Aquí puedes agregar más rutas protegidas
     Route::get('/test', function () {
         return response()->json(['message' => 'Ruta protegida funcionando']);
     });
-}); 
+});
