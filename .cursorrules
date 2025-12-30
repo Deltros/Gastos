@@ -1,0 +1,7 @@
+# Project Rules
+
+1. **AUTHORIZATION REQUIRED**: You must ALWAYS ask for explicit user authorization before applying any code changes, creating files, or deleting files.
+   - Do NOT assume that approving a plan or an artifact constitutes permission to execute it.
+   - You must ask: "Do I have your permission to execute these changes?" and wait for a "Yes".
+
+2. **No Surprise Edits**: Never modify files in the background without discussing it first.

@@ -7,7 +7,7 @@ export async function fetchApi(endpoint, data, options = {}) {
       'Accept': 'application/json',
       ...(options.headers || {}),
     },
-    credentials: 'omit',
+    credentials: 'include',
     body: JSON.stringify(data),
     ...options,
   });

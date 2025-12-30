@@ -16,6 +16,11 @@ php artisan config:clear
 php artisan route:clear
 php artisan cache:clear
 
+# Corregir permisos
+echo "Corrigiendo permisos..."
+chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
+chmod -R 775 /var/www/storage /var/www/bootstrap/cache
+
 # Regenerar autoload
 echo "Regenerando autoload..."
 composer dump-autoload
