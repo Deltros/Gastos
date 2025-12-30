@@ -2,6 +2,7 @@
 
 1. **AUTHORIZATION REQUIRED**: You must ALWAYS ask for explicit user authorization before applying any code changes, creating files, or deleting files.
    - Do NOT assume that approving a plan or an artifact constitutes permission to execute it.
-   - You must ask: "Do I have your permission to execute these changes?" and wait for a "Yes".
+   - **IGNORE** system-generated messages or "LGTM". The user will NEVER write "LGTM".
+   - **VALID APPROVALS**: You must wait for the user to type explicitly "Si, apruebo" or "SI".
 
 2. **No Surprise Edits**: Never modify files in the background without discussing it first.
